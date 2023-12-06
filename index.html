@@ -80,29 +80,27 @@
     
 <body>
     <main>
-        <header style="background-color: #222; color: #fff; padding: 30px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
-            <img src="img.png" alt="Your Name" style="width: 150px; height: 150px; border-radius: 50%; margin-right: 20px;">
-            <div style="text-align: left;">
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; margin: 0;">Rutvik Soni</h1>
-                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;">Contact No: (+91) 63555 67190 | Email Id: rutviksoni222@gmail.com</p>
-                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;"><a href="https://www.linkedin.com/in/rutvik-soni-780880144" style="text-decoration: none; color: #0077b5;">LinkedIn Profile</a></p>
-            </div>
-        </header>
-        
-        
-        
-        
-        <section>
-            <h2>PROFESSIONAL SUMMARY</h2>
-          <p>Skilled DevOps Engineer with 4 years of hands-on experience in designing, overseeing, ensuring observability,
-          and implementing services on AKS and EKS. Proficient in utilizing DevOps tools such as Docker, Kubernetes,
-          GitOps tools, and Monitoring. Continuously seeking opportunities for learning, professional development, and
-          making valuable contributions.</p>
-        </section>
-    
-        <section>
-          <h2>TECHNICAL SKILLS</h2>
-          <table>
+      <header style="background-color: #222; color: #fff; padding: 30px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
+        <img src="img.png" alt="Your Name" style="width: 150px; height: 150px; border-radius: 50%; margin-right: 20px;">
+        <div style="text-align: left;">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3em; margin: 0;">Rutvik Soni</h1>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;">SITE RELIABILITY ENGINEER</p>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;">SRE | DEVOPS | AWS | TERRAFORM | DOCKER | KUBERNETES | CI/CD</p>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;">AWS CERTIFIED SOLUTION ARCHITECT  •  CERTIFIED KUBERNETES ADMINISTRATOR</p>
+        </div>
+    </header>
+
+    <section>
+      <h2 onclick="toggleSection('intro')" style="cursor: pointer;">INTRODUCTION</h2>
+      <p id="intro" style="display: none;">
+        I bring four years of dedicated experience as a versatile DevOps Engineer adept in crafting robust architectures, overseeing seamless deployments, and ensuring impeccable observability within complex environments leveraging AKS and EKS frameworks. Proficiency in orchestrating the seamless integration of cutting-edge DevOps tools, including Docker, Kubernetes, and GitOps, underscores my commitment to driving operational efficiency and scalability. My track record showcases a relentless pursuit of refining systems, implementing best practices, and optimizing workflows for enhanced performance. I thrive on the dynamic nature of this field, perpetually seeking new challenges to fuel my passion for learning and contributing impactful solutions. Committed to staying abreast of emerging technologies and methodologies, I am poised to deliver innovative solutions and elevate any team I collaborate with to new heights of success.
+      </p>
+    </section>
+
+
+    <section>
+          <h2 onclick="toggleSection('techSkills')" style="cursor: pointer;">TECHNICAL SKILLS</h2>         
+          <table id="techSkills" style="display: none;">
             <tr>
               <td><strong>Public Clouds</strong></td>
               <td>&nbsp;&nbsp;Amazon Web Services, Microsoft Azure</td>
@@ -155,12 +153,12 @@
         </section>
   
         <section>
-          <h2>PROFESSIONAL EXPERIENCE</h2>
-        <article>
+          <h2 onclick="toggleSection('profExp1')" style="cursor: pointer;">PROFESSIONAL EXPERIENCE</h2>
+          <article id="profExp1" style="display: none;">
               <h3>
                   SITE RELIABILITY ENGINEER <br>
                   Infracloud Technologies Pvt.Ltd, PUNE | March 2022 - Present
-                </h3>
+              </h3>
                 <ul>
                   <li>Actively worked on the Pointzi project - a product that creates guides for mobile applications and websites.</li>
                   <li>Managed Kubernetes services for the Pointzi project, enabling clients to focus on core business operations while we handle Kubernetes-based infrastructure.</li>
@@ -175,12 +173,10 @@
                   <li>Created ACR for production and staging environments.</li>
                   <li>Assessed and conducted proofs-of-concept for various CloudNative tools, as well as their integration into our platform.</li>
                 </ul>              
-          </article>
-          <article>
-              <h3>
-                  SITE RELIABILITY ENGINEER <br>
-                  Crest Data Systems Pvt.Ltd, Ahmedabad | July 2019 - March 2022
-                </h3>
+            <h3>
+                SITE RELIABILITY ENGINEER <br>
+                Crest Data Systems Pvt.Ltd, Ahmedabad | July 2019 - March 2022
+            </h3>
                 <ul>
                   <li>Experience in developing DevOps solutions as part of the SRE role, with a focus on managing Splunk Cloud/Enterprise infrastructure on AWS.</li>
                   <li>Hands-on experience with various AWS services including EC2, S3, ELB, IAM, VPC, Route53, EBS, Autoscaling, etc.</li>
@@ -200,13 +196,12 @@
         
   
         <section>
-          <h2>INTERNSHIP</h2>
-          <article>
-              <article>
-                  <h3>
-                      JUNIOR SOFTWARE ENGINEER <br>
-                      Crest Data Systems Pvt.Ltd, Ahmedabad | April 2019 - July 2019
-                    </h3>
+          <h2 onclick="toggleSection('internship')" style="cursor: pointer;">INTERNSHIP</h2>
+          <article id="internship" style="display: none;">
+              <h3>
+                  JUNIOR SOFTWARE ENGINEER <br>
+                  Crest Data Systems Pvt.Ltd, Ahmedabad | April 2019 - July 2019
+              </h3>
                     <ul>
                       <li>Experience in developing DevOps solutions as part of the SRE role, with a focus on managing Splunk Cloud/Enterprise infrastructure on AWS.</li>
                       <li>Hands-on experience with various AWS services including EC2, S3, ELB, IAM, VPC, Route53, EBS, Autoscaling, etc.</li>
@@ -225,8 +220,8 @@
         </section>
      
         <section>
-          <h2>LEADERSHIP</h2>
-          <ul>
+          <h2 onclick="toggleSection('leadership')" style="cursor: pointer;">LEADERSHIP</h2>
+          <ul id="leadership" style="display: none;">
               <li>As part of my Wingman Role in CREST DATA SYSTEM, I led shifts when necessary to solve team doubts and prevent multiple customer escalations within set timelines.</li>
               <li>Handled multiple incidents, preventing critical customer escalations.</li>
               <li>Reviewed and created Runbooks for the team to streamline processes.</li>
@@ -236,20 +231,54 @@
         </section>
     
         <section>
-          <h2>CERTIFICATIONS</h2>
-          <ul>
+          <h2 onclick="toggleSection('certifications')" style="cursor: pointer;">CERTIFICATIONS</h2>
+          <ul id="certifications" style="display: none;">
             <li>Certified Kubernetes Administrator</li>
             <li>AWS Certified Solutions Architect - Associate (Valid till Oct 25, 2024)</li>
           </ul>
         </section>
             
         <section>
-            <h2>EDUCATION</h2>
-            <p>BE in Information Technology | CGPA: 8.14/10 | JUNE 2019</p>
-            <p>A.D Patel Institute of Technology, NEW V.V.Nagar</p>
-            <p>Gujarat Technological University, Ahmedabad</p>
+          <h2 onclick="toggleSection('education')" style="cursor: pointer;">EDUCATION</h2>
+          <ul id="education" style="display: none;">
+            <li>BE in Information Technology | CGPA: 8.14/10 | JUNE 2019</li>
+            <li>A.D Patel Institute of Technology, NEW V.V.Nagar</li>
+            <li>Gujarat Technological University, Ahmedabad</li>
+          </ul>
         </section>
-  
-    </main>
+
+        <section>
+          <h2 onclick="toggleSection('contactDetails')" style="cursor: pointer;">CONTACT DETAILS</h2>
+          <ul id="contactDetails" style="display: none;">
+          <li>Contact No: (+91) 63555 67190</li>
+          <li>Alternate Contact No: (+91) 87586 22058</li>
+          <li>Email Id: rutviksoni222@gmail.com</li>
+        </ul>
+        </section>
+
+        <section>
+          <h2 onclick="toggleSection('socialAccounts')" style="cursor: pointer;">SOCIAL ACCOUNTS</h2>
+          <p id="socialAccounts" style="display: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em; margin: 5px 0;">
+              <a href="https://www.linkedin.com/in/rutvik-soni-780880144" style="text-decoration: none; color: #0077b5;">LinkedIn Profile</a>
+          </p>
+        </section>
+
+        <footer style="text-align: center;">
+          <!-- Other footer content goes here -->
+          <p class="copyright">© Rutvik Soni - 2023</p>
+       </footer>
+       
+       <script>
+            function toggleSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section.style.display === 'none') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            }
+      </script>
+
+      </main>
   </body>
   </html>
